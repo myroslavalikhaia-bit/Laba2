@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Ліхая Лабораторна робота 2</title>
+
+    <!-- 1) Підключення ЗОВНІШНЬОГО CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 2) Внутрішній CSS у <style> -->
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(57, 30, 71)
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Лабораторна робота №2 </h1>
+
+    <!-- 3) INLINE-стиль -->
+    <p style="color: rgb(0, 17, 128); font-weight: bold;">
+        Це абзац з inline-стилем (style="...").
+    </p>
+
+    <div id="layout-demo">
+        <p>Тут можна буде показати position, float та інші штуки.</p>
+    </div>
+
+    <!-- Сюди додамо вертикальне меню -->
+    <nav class="side-menu">
+        <ul>
+            <li><a href="#" class="active">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Послуги</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <button class="jump-btn">Стрибуча кнопка</button>
+
+</body>
+</html>

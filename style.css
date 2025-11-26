@@ -1,0 +1,86 @@
+/* Селектор тегу */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3e6f6;
+}
+
+/* Селектор ID */
+#layout-demo {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* Приклад position: fixed – блок, що "висить" у кутку */
+#layout-demo {
+    position: relative; /* для прикладу можна й так */
+}
+
+/* ====== ВЕРТИКАЛЬНЕ МЕНЮ (варіант 8) ====== */
+
+.side-menu {
+    width: 200px;
+    margin: 20px;
+}
+
+/* список без стандартних кружечків */
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* посилання у меню – блочні, щоб весь рядок був клікабельним */
+.side-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #222;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* "поточне" посилання (перше) – інший фон */
+.side-menu a.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* :hover – коли наводимо мишу */
+.side-menu a:hover {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* ====== СТРИБУЧА КНОПКА (варіант 8) ====== */
+
+/* селектор класу */
+.jump-btn {
+    margin: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+
+    /* анімація */
+    animation-name: jump;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* опис самої анімації */
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
